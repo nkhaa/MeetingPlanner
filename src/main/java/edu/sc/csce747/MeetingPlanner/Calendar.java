@@ -39,7 +39,6 @@ public class Calendar {
 		occupied.get(4).get(31).add(new Meeting(4,31,"Day does not exist"));
 		occupied.get(6).get(31).add(new Meeting(6,31,"Day does not exist"));
 		occupied.get(9).get(31).add(new Meeting(9,31,"Day does not exist"));
-		occupied.get(11).get(30).add(new Meeting(11,31,"Day does not exist"));
 		occupied.get(11).get(31).add(new Meeting(11,31,"Day does not exist"));
 	}
 	

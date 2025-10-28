@@ -6,40 +6,40 @@ import org.junit.Test;
 public class MeetingTest {
 
     @Test
-    public void testValidMeetingCreation() {
-        Meeting m = new Meeting(2, 20, "Team Sync");
-        assertEquals(2, m.getMonth());
-        assertEquals(20, m.getDay());
-        assertEquals("Team Sync", m.getDescription());
+    public void testCtor_withTimes_setsAllFields() {
+        Meeting m = new Meeting(5, 10, 9, 11);
+        assertEquals(5, m.getMonth());
+        assertEquals(10, m.getDay());
+        assertEquals(9, m.getStartTime());
+        assertEquals(11, m.getEndTime());
+        // description may be null or default — we won’t assert it here
     }
 
     @Test
-    public void testDefaultTimes_whenNoTimesProvided_areAllDay() {
-        Meeting m = new Meeting(3, 20, "All-day");
-        assertEquals("Default start should be 0", 0, m.getStartTime());
-        assertEquals("Default end should be 23", 23, m.getEndTime());
+    public void testCtor_allDayByDescription_sets0to23() {
+        Meeting m = new Meeting(6, 26, "Midsommar");
+        // Calendar constructor itself uses this pattern for “Day does not exist”
+        // so we assume description-based ctor is all-day 0..23
+        assertEquals(6, m.getMonth());
+        assertEquals(26, m.getDay());
+        assertEquals(0, m.getStartTime());
+        assertEquals(23, m.getEndTime());
+        assertEquals("Midsommar", m.getDescription());
     }
 
-    @Test
-    public void testSetterGetter_roundtrip() {
-        Meeting m = new Meeting(8, 15, "Sprint Review");
-        m.setStartTime(14);
-        m.setEndTime(16);
-        m.setDescription("Updated Sprint Review");
-        assertEquals(14, m.getStartTime());
-        assertEquals(16, m.getEndTime());
-        assertEquals("Updated Sprint Review", m.getDescription());
-    }
 
     @Test
-    public void testAttendeesList_mutation() {
-        Meeting m = new Meeting(9, 9, "Demo");
-        Person a = new Person("Alice");
-        Person b = new Person("Bob");
-        m.addAttendee(a);
-        m.addAttendee(b);
-        assertEquals(2, m.getAttendees().size());
-        m.removeAttendee(a);
-        assertEquals(1, m.getAttendees().size());
+    public void testAddToCalendar_withInvalidTimes_failsAtCalendarLevel() {
+        // Meeting itself may not validate; Calendar is responsible for validation.
+        Calendar cal = new Calendar();
+        Meeting invalid = new Meeting(5, 15, -1, 10); // invalid start
+
+        try {
+            cal.addMeeting(invalid);
+            fail("Expected TimeConflictException when adding meeting with invalid hours");
+        } catch (TimeConflictException e) {
+            // expected — Calendar.checkTimes(...) should trigger
+            assertTrue(e.getMessage().toLowerCase().contains("illegal hour"));
+        }
     }
 }

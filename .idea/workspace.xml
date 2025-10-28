@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1a58bbd-bf35-4bf0-936e-13d7b056bed7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/edu/sc/csce747/MeetingPlanner/Calendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/edu/sc/csce747/MeetingPlanner/Calendar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/CalendarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/CalendarTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/MeetingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/MeetingTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/PersonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/PersonTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/RoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/RoomTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/CalendarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/CalendarTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/MeetingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/MeetingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/OrganizationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/OrganizationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/PersonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/RoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/RoomTest.java" afterDir="false" />
     </list>
@@ -19,21 +24,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "nkhaa"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nkhaa&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/nkhaa/MeetingPlanner.git",
-    "accountId": "15b6b03f-f632-4bff-9d50-2c3ed1d37bc3"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nkhaa/MeetingPlanner.git&quot;,
+    &quot;accountId&quot;: &quot;15b6b03f-f632-4bff-9d50-2c3ed1d37bc3&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="34e7HF3GlNLN0I6eIld3RErNH1N" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -44,23 +49,34 @@
     "Application.PlannerInterface.executor": "Run",
     "Downloaded.Files.Path.Enabled": "true",
     "JUnit.CalendarTest.executor": "Run",
+    "JUnit.CalendarTest.testBackToBackMeetings_allowed.executor": "Run",
+    "JUnit.CalendarTest.testBackToBackMeetings_disallowed.executor": "Run",
+    "JUnit.CalendarTest.testIsBusy_rangeCoversMeeting_currentBehavior_isFalse.executor": "Run",
+    "JUnit.CalendarTest.testPrintAgenda_day_includesMeeting.executor": "Run",
+    "JUnit.CalendarTest.testPrintAgenda_month_includesMeeting.executor": "Run",
+    "JUnit.MeetingTest.executor": "Run",
+    "JUnit.OrganizationTest.executor": "Run",
+    "JUnit.PersonTest.executor": "Run",
+    "JUnit.RoomTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Libraries",
+    "last_opened_file_path": "/Users/humiho/Downloads/chanariin batalgaa lab8/MeetingPlanner",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="RoomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalendarTest.testBackToBackMeetings_allowed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -69,15 +85,84 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.sc.csce747.MeetingPlanner" />
-      <option name="MAIN_CLASS_NAME" value="edu.sc.csce747.MeetingPlanner.RoomTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="edu.sc.csce747.MeetingPlanner.CalendarTest" />
+      <option name="METHOD_NAME" value="testBackToBackMeetings_allowed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalendarTest.testBackToBackMeetings_disallowed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.sc.csce747.MeetingPlanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.sc.csce747.MeetingPlanner" />
+      <option name="MAIN_CLASS_NAME" value="edu.sc.csce747.MeetingPlanner.CalendarTest" />
+      <option name="METHOD_NAME" value="testBackToBackMeetings_disallowed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalendarTest.testIsBusy_rangeCoversMeeting_currentBehavior_isFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.sc.csce747.MeetingPlanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.sc.csce747.MeetingPlanner" />
+      <option name="MAIN_CLASS_NAME" value="edu.sc.csce747.MeetingPlanner.CalendarTest" />
+      <option name="METHOD_NAME" value="testIsBusy_rangeCoversMeeting_currentBehavior_isFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalendarTest.testPrintAgenda_day_includesMeeting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.sc.csce747.MeetingPlanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.sc.csce747.MeetingPlanner" />
+      <option name="MAIN_CLASS_NAME" value="edu.sc.csce747.MeetingPlanner.CalendarTest" />
+      <option name="METHOD_NAME" value="testPrintAgenda_day_includesMeeting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalendarTest.testPrintAgenda_month_includesMeeting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.sc.csce747.MeetingPlanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.sc.csce747.MeetingPlanner" />
+      <option name="MAIN_CLASS_NAME" value="edu.sc.csce747.MeetingPlanner.CalendarTest" />
+      <option name="METHOD_NAME" value="testPrintAgenda_month_includesMeeting" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RoomTest" />
+        <item itemvalue="JUnit.CalendarTest.testPrintAgenda_day_includesMeeting" />
+        <item itemvalue="JUnit.CalendarTest.testIsBusy_rangeCoversMeeting_currentBehavior_isFalse" />
+        <item itemvalue="JUnit.CalendarTest.testPrintAgenda_month_includesMeeting" />
+        <item itemvalue="JUnit.CalendarTest.testBackToBackMeetings_disallowed" />
+        <item itemvalue="JUnit.CalendarTest.testBackToBackMeetings_allowed" />
       </list>
     </recent_temporary>
   </component>
