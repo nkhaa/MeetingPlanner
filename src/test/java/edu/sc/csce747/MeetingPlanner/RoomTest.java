@@ -58,6 +58,24 @@ public class RoomTest {
             fail("Should not throw");
         }
     }
+    @Test
+    public void testAddMeeting_conflictPropagation() throws Exception {
+        Room r = new Room("TestRoom");
+        Meeting m1 = new Meeting(7, 8, 9, 10);
+        Meeting m2 = new Meeting(7, 8, 9, 11);
+        r.addMeeting(m1);
+        assertThrows(TimeConflictException.class, () -> r.addMeeting(m2));
+    }
+
+    @Test
+    public void testPrintAgenda_dayAndMonth() throws Exception {
+        Room r = new Room("R1");
+        Meeting m = new Meeting(5, 10, 9, 10, new ArrayList<>(), r, "Team Sync");
+        r.addMeeting(m);
+        assertTrue(r.printAgenda(5).contains("Team Sync"));
+        assertTrue(r.printAgenda(5, 10).contains("Team Sync"));
+    }
+
 
     @Test
     public void testPrintAgendaWorks() {
@@ -78,4 +96,12 @@ public class RoomTest {
             fail("Should not throw");
         }
     }
+    @Test
+    public void testPrintAgenda_noMeetings() {
+        Room r = new Room("Empty");
+        String result = r.printAgenda(1);
+        assertTrue(result.isEmpty() || !result.contains("Meeting"));
+    }
+
+
 }

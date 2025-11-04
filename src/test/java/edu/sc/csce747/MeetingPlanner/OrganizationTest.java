@@ -42,4 +42,27 @@ public class OrganizationTest {
             assertTrue(e.getMessage().toLowerCase().contains("does not exist"));
         }
     }
+
+    @Test
+    public void testGetRoom_validAndInvalid() throws Exception {
+        Organization o = new Organization();
+        assertNotNull(o.getRoom("2A01"));
+        assertThrows(Exception.class, () -> o.getRoom("X999"));
+    }
+
+    @Test
+    public void testGetEmployee_validAndInvalid() throws Exception {
+        Organization o = new Organization();
+        assertNotNull(o.getEmployee("Greg Gay"));
+        assertThrows(Exception.class, () -> o.getEmployee("Unknown Person"));
+    }
+
+    // ===== Structural White-Box Tests (Refinement) =====
+    @Test
+    public void testGetRoom_caseSensitivity() throws Exception {
+        Organization o = new Organization();
+        assertThrows(Exception.class, () -> o.getRoom("2a01")); // lowercase variant
+    }
+
+
 }

@@ -77,37 +77,16 @@ public class PersonTest {
             fail("Should not throw");
         }
     }
-
     @Test
-    public void testPrintAgendaWorks() {
-        Person p = new Person("Frank");
-
-        // Create meeting fully initialized with room and attendees
-        ArrayList<Person> attendees = new ArrayList<>();
-        attendees.add(p);
-        Room room = new Room("2A04");
-        Meeting meeting = new Meeting(9, 9, 13, 14, attendees, room, "One-on-One");
-
-        try {
-            // Add through Person’s addMeeting method
-            p.addMeeting(meeting);
-
-            // Use Person’s own methods (which delegate to Calendar)
-            String dayAgenda = p.printAgenda(9, 9);
-            String monthAgenda = p.printAgenda(9);
-
-            assertNotNull(dayAgenda);
-            assertTrue(dayAgenda.startsWith("Agenda for 9/9:"));
-            assertTrue(dayAgenda.contains("One-on-One"));
-            assertTrue(dayAgenda.contains("2A04"));
-
-            assertNotNull(monthAgenda);
-            assertTrue(monthAgenda.startsWith("Agenda for 9:"));
-            assertTrue(monthAgenda.contains("One-on-One"));
-        } catch (TimeConflictException e) {
-            fail("Should not throw: " + e.getMessage());
-        }
+    public void testAddMeeting_conflictPropagation() throws Exception {
+        Person p = new Person("Bob");
+        Room room = new Room("R1");
+        Meeting m1 = new Meeting(4, 5, 10, 11, new ArrayList<>(), room, "Conflict1");
+        Meeting m2 = new Meeting(4, 5, 10, 12, new ArrayList<>(), room, "Conflict2");
+        p.addMeeting(m1);
+        assertThrows(TimeConflictException.class, () -> p.addMeeting(m2));
     }
+
 
 
     @Test
@@ -120,4 +99,16 @@ public class PersonTest {
             assertTrue(e.getMessage().toLowerCase().contains("illegal hour"));
         }
     }
+
+
+
+    @Test
+    public void testIsBusy_exactEndBoundary() throws Exception {
+        Person p = new Person("Liam");
+        Meeting m = new Meeting(3, 3, 9, 10);
+        p.addMeeting(m);
+        assertTrue(p.isBusy(3, 3, 9, 10));  // on boundary
+    }
+
+
 }

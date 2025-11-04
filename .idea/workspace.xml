@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d1a58bbd-bf35-4bf0-936e-13d7b056bed7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/edu/sc/csce747/MeetingPlanner/Calendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/edu/sc/csce747/MeetingPlanner/Calendar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/CalendarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/CalendarTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/MeetingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/MeetingTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/PersonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/PersonTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/RoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/edu/sc/csce747/MeetingPlanner/RoomTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/CalendarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/CalendarTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/MeetingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/MeetingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/OrganizationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/OrganizationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/PersonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/RoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/sc/csce747/MeetingPlanner/RoomTest.java" afterDir="false" />
     </list>
@@ -48,16 +44,32 @@
   "keyToString": {
     "Application.PlannerInterface.executor": "Run",
     "Downloaded.Files.Path.Enabled": "true",
-    "JUnit.CalendarTest.executor": "Run",
+    "JUnit.All in test (1).executor": "Coverage",
+    "JUnit.All in test (2).executor": "Coverage",
+    "JUnit.All in test (3).executor": "Coverage",
+    "JUnit.All in test (4).executor": "Coverage",
+    "JUnit.All in test.executor": "Coverage",
+    "JUnit.CalendarTest.addMeeting_success_noConflict.executor": "Debug",
+    "JUnit.CalendarTest.executor": "Coverage",
+    "JUnit.CalendarTest.testAddMeeting_dayDoesNotExistConditionFalse.executor": "Run",
+    "JUnit.CalendarTest.testAddMeeting_emptyDay_noConflictBranch.executor": "Coverage",
+    "JUnit.CalendarTest.testAddMeeting_newMonth_newDay_branches.executor": "Coverage",
     "JUnit.CalendarTest.testBackToBackMeetings_allowed.executor": "Run",
     "JUnit.CalendarTest.testBackToBackMeetings_disallowed.executor": "Run",
+    "JUnit.CalendarTest.testGetMeeting_indexTooLarge.executor": "Run",
     "JUnit.CalendarTest.testIsBusy_rangeCoversMeeting_currentBehavior_isFalse.executor": "Run",
+    "JUnit.CalendarTest.testPrintAgenda_dayHeaderOnly_noMeetings.executor": "Run",
     "JUnit.CalendarTest.testPrintAgenda_day_includesMeeting.executor": "Run",
+    "JUnit.CalendarTest.testPrintAgenda_monthHeaderOnly_noMeetings.executor": "Run",
     "JUnit.CalendarTest.testPrintAgenda_month_includesMeeting.executor": "Run",
+    "JUnit.CalendarTest.testPrintAgenda_month_notEmptyAndHasHeader.executor": "Debug",
+    "JUnit.CalendarTest.testRemoveMeeting_onEmptyDay_noError.executor": "Coverage",
     "JUnit.MeetingTest.executor": "Run",
     "JUnit.OrganizationTest.executor": "Run",
     "JUnit.PersonTest.executor": "Run",
     "JUnit.RoomTest.executor": "Run",
+    "JUnit.RoomTest.testAddMeeting_conflictPropagation.executor": "Run",
+    "JUnit.edu.sc.csce747.MeetingPlanner in test.executor": "Coverage",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -73,10 +85,23 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
+    ]
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="CalendarTest.testBackToBackMeetings_allowed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.edu.sc.csce747.MeetingPlanner in test">
+    <configuration name="All in test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalendarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -86,13 +111,28 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.sc.csce747.MeetingPlanner" />
       <option name="MAIN_CLASS_NAME" value="edu.sc.csce747.MeetingPlanner.CalendarTest" />
-      <option name="METHOD_NAME" value="testBackToBackMeetings_allowed" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalendarTest.testGetMeeting_indexTooLarge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.sc.csce747.MeetingPlanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.sc.csce747.MeetingPlanner" />
+      <option name="MAIN_CLASS_NAME" value="edu.sc.csce747.MeetingPlanner.CalendarTest" />
+      <option name="METHOD_NAME" value="testGetMeeting_indexTooLarge" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalendarTest.testBackToBackMeetings_disallowed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -101,14 +141,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.sc.csce747.MeetingPlanner" />
-      <option name="MAIN_CLASS_NAME" value="edu.sc.csce747.MeetingPlanner.CalendarTest" />
-      <option name="METHOD_NAME" value="testBackToBackMeetings_disallowed" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="edu.sc.csce747.MeetingPlanner.PersonTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalendarTest.testIsBusy_rangeCoversMeeting_currentBehavior_isFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="edu.sc.csce747.MeetingPlanner in test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -117,52 +156,18 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.sc.csce747.MeetingPlanner" />
-      <option name="MAIN_CLASS_NAME" value="edu.sc.csce747.MeetingPlanner.CalendarTest" />
-      <option name="METHOD_NAME" value="testIsBusy_rangeCoversMeeting_currentBehavior_isFalse" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalendarTest.testPrintAgenda_day_includesMeeting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.sc.csce747.MeetingPlanner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.sc.csce747.MeetingPlanner" />
-      <option name="MAIN_CLASS_NAME" value="edu.sc.csce747.MeetingPlanner.CalendarTest" />
-      <option name="METHOD_NAME" value="testPrintAgenda_day_includesMeeting" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalendarTest.testPrintAgenda_month_includesMeeting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.sc.csce747.MeetingPlanner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.sc.csce747.MeetingPlanner" />
-      <option name="MAIN_CLASS_NAME" value="edu.sc.csce747.MeetingPlanner.CalendarTest" />
-      <option name="METHOD_NAME" value="testPrintAgenda_month_includesMeeting" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CalendarTest.testPrintAgenda_day_includesMeeting" />
-        <item itemvalue="JUnit.CalendarTest.testIsBusy_rangeCoversMeeting_currentBehavior_isFalse" />
-        <item itemvalue="JUnit.CalendarTest.testPrintAgenda_month_includesMeeting" />
-        <item itemvalue="JUnit.CalendarTest.testBackToBackMeetings_disallowed" />
-        <item itemvalue="JUnit.CalendarTest.testBackToBackMeetings_allowed" />
+        <item itemvalue="JUnit.edu.sc.csce747.MeetingPlanner in test" />
+        <item itemvalue="JUnit.PersonTest" />
+        <item itemvalue="JUnit.CalendarTest" />
+        <item itemvalue="JUnit.All in test (1)" />
+        <item itemvalue="JUnit.CalendarTest.testGetMeeting_indexTooLarge" />
       </list>
     </recent_temporary>
   </component>
@@ -199,5 +204,34 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="room" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MeetingPlanner_Lab8_final$All_in_test__4_.ic" NAME="All in test (4) Coverage Results" MODIFIED="1762243844645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/MeetingPlanner_Lab8_final$All_in_test.ic" NAME="All in test Coverage Results" MODIFIED="1762244195367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/MeetingPlanner_Lab8_final$CalendarTest_testAddMeeting_emptyDay_noConflictBranch.ic" NAME="CalendarTest.testAddMeeting_emptyDay_noConflictBranch Coverage Results" MODIFIED="1762244343326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>edu.sc.csce747.MeetingPlanner.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/MeetingPlanner_Lab8_final$CalendarTest_testRemoveMeeting_onEmptyDay_noError.ic" NAME="CalendarTest.testRemoveMeeting_onEmptyDay_noError Coverage Results" MODIFIED="1762229450509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>edu.sc.csce747.MeetingPlanner.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/MeetingPlanner_Lab8_final$CalendarTest_testAddMeeting_newMonth_newDay_branches.ic" NAME="CalendarTest.testAddMeeting_newMonth_newDay_branches Coverage Results" MODIFIED="1762230460369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>edu.sc.csce747.MeetingPlanner.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/MeetingPlanner_Lab8_final$edu_sc_csce747_MeetingPlanner_in_test.ic" NAME="edu.sc.csce747.MeetingPlanner in test Coverage Results" MODIFIED="1762245582443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>edu.sc.csce747.MeetingPlanner.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/MeetingPlanner_Lab8_final$All_in_test__3_.ic" NAME="All in test (3) Coverage Results" MODIFIED="1762243715133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/MeetingPlanner_Lab8_final$CalendarTest.ic" NAME="CalendarTest Coverage Results" MODIFIED="1762245035709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>edu.sc.csce747.MeetingPlanner.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/MeetingPlanner_Lab8_final$All_in_test__1_.ic" NAME="All in test (1) Coverage Results" MODIFIED="1762244709047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/MeetingPlanner_Lab8_final$All_in_test__2_.ic" NAME="All in test (2) Coverage Results" MODIFIED="1762242291850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
